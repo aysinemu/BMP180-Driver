@@ -31,12 +31,14 @@ Nguyễn Châu Tấn Cường - 23146007
 
 ### IOCTL Interface
 
+```
 | ------------------------- | -------------------------------- |
 | IOCTL Command             | Description                      |
 | ------------------------- | -------------------------------- |
 | `BMP180_IOCTL_READ_TEMP`  | Read temperature from the sensor |
 | `BMP180_IOCTL_READ_PRESS` | Read pressure from the sensor    |
 | ------------------------- | -------------------------------- |
+```
 
 ### Device Tree Binding
 
@@ -47,13 +49,15 @@ This driver supports Device Tree binding using the compatible string:
 
 ### Connect
 
+```
  +-----+-----+---------+------+---+---Pi 3B+-+---+------+---------+-----+-----+
  | BCM | wPi |   Name  | Mode | V | Physical | V | Mode | Name    | wPi | BCM |
  +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
  |     |     |    3.3v |      |   |  1 ||    |   |      | 5v      |     |     |
  |   2 |   8 |   SDA.1 | ALT0 | 1 |  3 ||    |   |      | 5v      |     |     |
  |   3 |   9 |   SCL.1 | ALT0 | 1 |  5 || 6  |   |      | 0v      |     |     |
-  +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
+ +-----+-----+---------+------+---+----++----+---+------+---------+-----+-----+
+ ``` 
 
 ### Clone project
 
