@@ -1,3 +1,4 @@
+//Nguyễn Châu Tấn Cường - 23146007
 #include <linux/init.h>
 #include <linux/module.h>
 #include <linux/i2c.h>
