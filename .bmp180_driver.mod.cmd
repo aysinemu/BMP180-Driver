@@ -1,1 +1,0 @@
-cmd_/home/pi/Desktop/App/BMP180-Driver/bmp180_driver.mod := printf '%s\n'   bmp180_driver.o | awk '!x[$$0]++ { print("/home/pi/Desktop/App/BMP180-Driver/"$$0) }' > /home/pi/Desktop/App/BMP180-Driver/bmp180_driver.mod
